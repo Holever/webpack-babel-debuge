@@ -1,5 +1,5 @@
 const path = require('path')
-const DebuggeWebpackPlugin = require('./debugge-webpack-plugin')
+const DebugWebpackPlugin = require('./debug-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new DebuggeWebpackPlugin(),
+    new DebugWebpackPlugin(),
     new HtmlWebpackPlugin()
   ],
   resolve: {

@@ -1,4 +1,4 @@
-const DebugePlugin = require('./debuge-babel-plugin')
+const DebugPlugin = require('./debug-babel-plugin')
 
 module.exports = {
   "presets": [ "@babel/preset-react"],
@@ -9,7 +9,7 @@ module.exports = {
   //   }],
   // ],
   plugins: [
-    [DebugePlugin, {
+    [DebugPlugin, {
       isRouterFile: (filename) => {
         return true
       },
